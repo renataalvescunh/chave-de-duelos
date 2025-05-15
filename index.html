@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> Chaves de Duelos </title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <script src="/scripts/script.js"></script>
+    <link type="image/png" sizes="32x32" rel="icon" href="assets/fav.png">
+    <body>
+        <main>
+    <h1 class="titulo" >
+        Chaves de Duelos
+    </h1>
+    <p> Escreva os nomes dos participantes no campo abaixo, pule uma linha para cada nome. Depois selecione os vencedores para as próximas fases. </p>
+    <textarea id="nomes" placeholder=" &#10;Exemplo:&#10; &#10; Nome 1 &#10; Nome 1 &#10; Nome 1 &#10; "></textarea>
+    <div id="botoes">
+        <button onclick="gerarChaves()">Gerar Chave</button>
+    </div>
+    <div id="resultado"></div>
+    <div id="proximaFase"></div>
+</main>
+<div id="footer"></div>
+<script>
+    fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+</body>
+</html>

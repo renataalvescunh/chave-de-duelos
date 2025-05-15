@@ -1,0 +1,5 @@
+@media (max-width: 600px) {
+    textarea, .par {
+        max-width: 98%;
+    }
+}
