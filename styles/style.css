@@ -226,3 +226,27 @@ button.vencedor, .par.selecionado button.vencedor  {
         0 7px 0 0 #000000;
 }
 
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #322f5c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: fixed;
+    left: 35%;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+
+}
+
+footer a {
+color: #da24ac;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+color: #322f5c;
+}
