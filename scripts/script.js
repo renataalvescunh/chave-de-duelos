@@ -60,20 +60,7 @@ function gerarChaves(nomes = null) {
     checarProximaFase();
 }
 
-function marcarVencedor(parIndex, nomeIndex, btn) {
-    if (vencedores[parIndex]) return; // já escolhido
-    vencedores[parIndex] = faseAtual[parIndex][nomeIndex];
-    // Destaca vencedor
-    const parDiv = document.getElementById('par' + parIndex);
-    const botoes = parDiv.getElementsByTagName('button');
-    for (let i = 0; i < botoes.length; i++) {
-        botoes[i].disabled = true;
-        botoes[i].classList.remove('vencedor');
-    }
-    btn.classList.add('vencedor');
-    parDiv.classList.add('selecionado');
-    checarProximaFase();
-}
+
 
 function checarProximaFase() {
     const incompletos = faseAtual.filter((par, i) => !vencedores[i]);
@@ -98,4 +85,18 @@ function checarProximaFase() {
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    window.marcarVencedor = function(parIndex, nomeIndex, btn) {
+        vencedores[parIndex] = faseAtual[parIndex][nomeIndex];
+        const parDiv = document.getElementById('par' + parIndex);
+        const botoes = parDiv.getElementsByTagName('button');
+        for (let i = 0; i < botoes.length; i++) {
+            botoes[i].disabled = false;
+            botoes[i].classList.remove('vencedor');
+        }
+        btn.classList.add('vencedor');
+        parDiv.classList.add('selecionado');
+        checarProximaFase();
+    };
+});
 
