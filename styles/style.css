@@ -285,7 +285,11 @@ color: #322f5c;
 
     .aviso, .parabens {
         font-size: 1em;
-        margin-bottom: 40px;
+        margin-bottom: 4px;
+    }
+
+    .parabens  {
+        font-size: 1.2em;
     }
     
 
