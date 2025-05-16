@@ -3,7 +3,7 @@
 <h1 align="center" id="project_name">
   <br />
   <!-- Link externo ou local(.github). -->
-  <img src="assets/fav.png" alt="Logo" width="50px">
+<img src="https://raw.githubusercontent.com/renataalvescunh/chave-de-duelos/refs/heads/main/assets/fav.png" width="60px" alt="Logo">
   <br />
 Chave de Duelos  <br />
 </h1>
@@ -21,18 +21,11 @@ Chave de Duelos  <br />
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img src="assets/exemplo.png" width="777px" alt="Tela 1">
+<img src="https://github.com/renataalvescunh/chave-de-duelos/raw/main/assets/exemplo.png" width="777px" alt="Tela 1">
 </p>
 
-<h2 id="layout"> 🔨 Tecnologias usadas: </h2>
-
-<ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript </li>
-</ul>
 
 ---
 
 
-<p align="center">Feito com 💌. </p>"
+<p align="center">Feito com 💌. </p>
